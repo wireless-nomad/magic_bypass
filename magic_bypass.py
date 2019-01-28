@@ -43,10 +43,13 @@ audio: mp3,midi \n
 documents: ppt,doc,xls,msg \n
 database: sqlitedb \n
 other: xml,pdf,utf-8,ps,crx,dmg,dat,cab,wasm,swf,deb,pcap,rpm \n
-Linux webservers detect file types by the first few bytes(magic bytes)
-Depending on the setup by injection a false magic bytes, hopefully we can by pass this.
-Sometimes they will also check if the file they are looking for is also in the file name 
-so that will also be but in for good measure. \n
+Linux web servers detect file types by the first few bytes(magic bytes). \n
+
+By injecting false magic bytes into the file, this filtering mechanism will be bypassed.
+Sometimes they will also check if the file extension they are looking for is also in the file name 
+, so that will also be but in for good measure. \n
+
+Other filtering mechanisms may be in place, therefore the bypass will be unsuccessful. \n
 
 This Script should NOT be used by people who use shoe laces!
 Beach lovers only - I love shells xxx
